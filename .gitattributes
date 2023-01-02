@@ -1,22 +1,41 @@
 # This sets the default behaviour, overriding core.autocrlf
 * text=auto
-
 # All source files should have unix line-endings in the repository,
 # but convert to native line-endings on checkout
 *.cpp text
 *.h text
 *.hpp text
-
 # Windows specific files should retain windows line-endings
 *.sln text eol=crlf
-
 # Keep executable scripts with LFs so they can be run after being
 # checked out on Windows
 *.py text eol=lf
-
-
 # Keep the single include header with LFs to make sure it is uploaded,
 # hashed etc with LF
 single_include/**/*.hpp eol=lf
 # Also keep the LICENCE file with LFs for the same reason
 LICENCE.txt eol=lf
+include filter=lfs diff=lfs merge=lfs -text
+LICENSE filter=lfs diff=lfs merge=lfs -text
+MODULE_LICENSE_BOOST filter=lfs diff=lfs merge=lfs -text
+OWNERS filter=lfs diff=lfs merge=lfs -text
+artwork filter=lfs diff=lfs merge=lfs -text
+codecov.yml filter=lfs diff=lfs merge=lfs -text
+CODE_OF_CONDUCT.md filter=lfs diff=lfs merge=lfs -text
+contrib filter=lfs diff=lfs merge=lfs -text
+docs filter=lfs diff=lfs merge=lfs -text
+projects filter=lfs diff=lfs merge=lfs -text
+single_include filter=lfs diff=lfs merge=lfs -text
+appveyor.yml filter=lfs diff=lfs merge=lfs -text
+CMakeLists.txt filter=lfs diff=lfs merge=lfs -text
+conanfile.py filter=lfs diff=lfs merge=lfs -text
+NOTICE filter=lfs diff=lfs merge=lfs -text
+scripts filter=lfs diff=lfs merge=lfs -text
+third_party filter=lfs diff=lfs merge=lfs -text
+CMake filter=lfs diff=lfs merge=lfs -text
+examples filter=lfs diff=lfs merge=lfs -text
+LICENSE.txt filter=lfs diff=lfs merge=lfs -text
+METADATA filter=lfs diff=lfs merge=lfs -text
+misc filter=lfs diff=lfs merge=lfs -text
+README.md filter=lfs diff=lfs merge=lfs -text
+Android.bp filter=lfs diff=lfs merge=lfs -text

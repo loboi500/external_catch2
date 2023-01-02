@@ -1,25 +1,3 @@
-coverage:
-  precision: 2
-  round: nearest
-  range: "60...90"
-  status:
-    project:
-      default:
-        threshold: 2%
-    patch:
-      default:
-        target: 80%
-  ignore:
-    - "projects/SelfTest"
-    - "**/catch_reporter_tap.hpp"
-    - "**/catch_reporter_automake.hpp"
-    - "**/catch_reporter_teamcity.hpp"
-    - "**/catch_reporter_sonarqube.hpp"
-    - "**/external/clara.hpp"
-
-
-codecov:
-  branch: master
-
-comment:
-  layout: "diff"
+version https://git-lfs.github.com/spec/v1
+oid sha256:1bd7a196b8696e561fa3ea905d93c4f898c6b689fe1c7a9f91202506aa916b11
+size 440
